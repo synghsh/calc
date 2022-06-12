@@ -1,0 +1,44 @@
+<title>Calculator</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/calc.css' %}">
+
+{% include 'header.html' %}
+
+
+<div class="container mt-4">
+    <h1>Calculator</h1>
+    <br>
+    <div class="calculator">
+        <input type="text" class="form-control" >
+        <br>
+        <table class="table-success">
+            <tr>
+                <td><button type="submit">7</button></td>
+                <td><button type="submit">8</button></td>
+                <td><button type="submit">9</button></td>
+                <td><button type="submit">C</button></td>
+            </tr>
+            <tr>
+                <td><button type="submit">4</button></td>
+                <td><button type="submit">5</button></td>
+                <td><button type="submit">6</button></td>
+                <td><button type="submit">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="submit">1</button></td>
+                <td><button type="submit">2</button></td>
+                <td><button type="submit">3</button></td>
+                <td><button type="submit">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="submit">0</button></td>
+                <td><button type="submit">X</button></td>
+                <td><button type="submit">/</button></td>
+                <td><button type="submit">=</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+{% include 'footer.html' %}

@@ -1,0 +1,29 @@
+<title>Calc</title>
+{% include 'header.html' %}
+<div class="container">
+    <form action="">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Number 1</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter 1st no."
+                name="num1">
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Number 2</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter 2nd no."
+                name="num2">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary" name="add">Addition</button>
+        <button type="submit" class="btn btn-secondary" name="sub">Subtraction</button>
+        <button type="submit" class="btn btn-success" name="mul">Multiplication</button>
+        <button type="submit" class="btn btn-danger" name="div">Dividation</button>
+        <br>
+    </form>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Result</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Result" name="" value={{output}}>
+    </div>
+</div>
+
+{% include 'footer.html' %}
